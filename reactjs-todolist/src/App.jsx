@@ -1,9 +1,9 @@
 import { useState, useEffect} from "react"
 import TodoInput from "./components/TodoInput"
-import TouchList from "./components/TodoList"
+import TodoList from "./components/TodoList"
 
 function App() {
-  const [todos, setTodos] = React.useState([])
+  const [todos, setTodos] = useState([])
   const [todoValue, setTodoValue] = useState('')
 
   function persistData(newList) {
